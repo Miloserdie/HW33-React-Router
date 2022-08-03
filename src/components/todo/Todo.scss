@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.todos-item{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.todos-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.todos-item-text{
+	border-bottom: 1px solid rgb(0, 182, 121);
+	padding-bottom: 3px;
+	padding-left: 1px;
+	margin-left: 8px;
+	overflow-wrap: break-word;
+	max-width: 900px;
+	margin-right: 20px;
+	align-self: flex-start;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.todos-link {
+	align-self: flex-start;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1.1px;
+	display: inline-block;
+	padding: 100px 0;
+	&:hover{
+		background: rgb(107, 63, 211);
+		transition: 0.2s linear
+	}
+}
+
+.buttons{
+	width: 190px;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.todos-btn{
+	margin-bottom: 10px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.btn{
+	outline: none;
+	background: none;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.in-progress{
+	border-color: rgb(235, 231, 5);
+}
+
+.done{
+	border-color: rgb(0, 182, 121);
+}

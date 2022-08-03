@@ -1,0 +1,27 @@
+.task-form{
+	max-width: 700px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.task-form__input {
+	width: 500px;
+	color: black;
+}
+
+.task-input{
+	background: none;
+	outline: none;
+	color: white;
+	border: 1px solid rgb(0, 182, 121);
+	width: 480px;
+	font-size: 20px;
+}
+
+.task-btn{
+	font-size: 20px;
+	border: 1px solid rgb(0, 182, 121);
+	background: none;
+}
