@@ -12,7 +12,6 @@ function TaskDiscription() {
 	const [todo, setTodo] = useState({});
 	const status = todo.status ? 'done' : 'in-progress'; 
 	const [inputValue, setInputValue] = useState(todo.discription);
-	const [btnBlock, setBtnBlock] = useState(false);
 
 	useEffect(() => {
 		async function getTask() {
@@ -31,7 +30,6 @@ function TaskDiscription() {
 	}
 
 	function saveValue(e) {
-		setBtnBlock(true)
 		e.preventDefault();
 		const newTask = {
 			id: id,
@@ -41,8 +39,6 @@ function TaskDiscription() {
 		}
 
 		dispatch(updateTaskDiscriptionReqAction(id, newTask))
-
-		setTimeout(() => setBtnBlock(false), 1000);
 	}
 
 	return (
