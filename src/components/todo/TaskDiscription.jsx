@@ -40,11 +40,7 @@ function TaskDiscription() {
 			status: todo.status
 		}
 
-		async function updateTask(id, task) {
-			dispatch(updateTaskDiscriptionReqAction(id, task))
-		}
-
-		updateTask(id, newTask);
+		dispatch(updateTaskDiscriptionReqAction(id, newTask))
 
 		setTimeout(() => setBtnBlock(false), 1000);
 	}
